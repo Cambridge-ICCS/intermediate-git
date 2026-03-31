@@ -24,9 +24,10 @@ def calculate_saturation_vapor_pressure(temperature: float) -> float:
 
     References
     ----------
-    Bolton 1980
-    Guide to Meteorological Instruments and Methods of Observation (2008)
-    See https://www.eol.ucar.edu/data-software/conventions-and-standards/water-vapor-pressure-formulations
+    - Buck, A. L., New equations for computing vapor pressure and enhancement factor,
+      J. Appl. Meteorol., 20, 1527-1532, 1981
+    - Guide to Meteorological Instruments and Methods of Observation (2008)
+    - See https://www.eol.ucar.edu/data-software/conventions-and-standards/water-vapor-pressure-formulations
 
     Examples
     --------
@@ -41,7 +42,7 @@ def calculate_saturation_vapor_pressure(temperature: float) -> float:
     temp_c = temperature - 273.15
 
     if temp_c < 0:  # Below freezing (ice)
-        return 611.2 * np.exp(22.46 * temp_c / (temp_c + 272.6))
+        return 611.21 * np.exp(17.502 * temp_c / (temp_c + 240.97))
     else:  # Above freezing (water)
         return 611.2 * np.exp(17.67 * temp_c / (temp_c + 243.5))
 
