@@ -3,6 +3,7 @@
 import pytest
 
 from thermolib.moisture import (
+    calculate_relative_humidity,
     calculate_saturation_vapor_pressure,
 )
 
@@ -73,3 +74,108 @@ class TestSaturationVaporPressure:
         # Each 20°C increase should roughly double the SVP
         assert svp_293 > 2 * svp_273  # >2x increase from 0°C to 20°C
         assert svp_313 > 2 * svp_293  # >2x increase from 20°C to 40°C
+
+
+class TestRelativeHumidity:
+    """Test cases for relative humidity calculations."""
+
+    def test_saturated_air(self):
+        """Test with saturated air (100% RH)."""
+        # At 25°C, if vapor pressure equals saturation vapor pressure
+        svp = calculate_saturation_vapor_pressure(298.15)
+        rh = calculate_relative_humidity(svp, 298.15)
+        # Should be 1.0 (100%)
+        assert rh == pytest.approx(1.0)
+
+    def test_dry_air(self):
+        """Test with very dry air (low RH)."""
+        # Very low vapor pressure
+        rh = calculate_relative_humidity(100.0, 298.15)  # 100 Pa at 25°C
+        # Should be around 3% RH
+        assert 0.02 < rh < 0.04
+
+    def test_moderate_humidity(self):
+        """Test with moderate humidity conditions."""
+        # 1500 Pa vapor pressure at 25°C (about 47% RH)
+        rh = calculate_relative_humidity(1500.0, 298.15)
+        # Should be around 0.47 (47%)
+        assert 0.45 < rh < 0.49
+
+    def test_high_humidity(self):
+        """Test with high humidity conditions."""
+        # 3000 Pa vapor pressure at 25°C (about 95% RH)
+        rh = calculate_relative_humidity(3000.0, 298.15)
+        # Should be around 0.95 (95%)
+        assert 0.93 < rh < 0.97
+
+    def test_excess_vapor_pressure(self):
+        """Test with vapor pressure exceeding saturation (supersaturation)."""
+        # Vapor pressure higher than saturation (should be clipped to 1.0)
+        svp = calculate_saturation_vapor_pressure(298.15)
+        rh = calculate_relative_humidity(svp * 1.5, 298.15)  # 150% of saturation
+        # Should be clipped to 1.0 (100%)
+        assert rh == pytest.approx(1.0)
+
+    def test_negative_vapor_pressure(self):
+        """Test that negative vapor pressure raises ValueError."""
+        with pytest.raises(ValueError, match="Vapor pressure cannot be negative"):
+            calculate_relative_humidity(-100.0, 298.15)
+
+    def test_invalid_temperature(self):
+        """Test that invalid temperature raises ValueError."""
+        with pytest.raises(ValueError, match="Temperature must be above absolute zero"):
+            calculate_relative_humidity(1000.0, -10.0)
+
+    def test_temperature_dependence(self):
+        """Test that RH depends on temperature for same vapor pressure."""
+        # Same vapor pressure at different temperatures
+        vapor_pressure = 1000.0  # 1000 Pa
+
+        # At 10°C (283.15 K)
+        rh_10c = calculate_relative_humidity(vapor_pressure, 283.15)
+
+        # At 20°C (293.15 K) - higher saturation VP, so lower RH
+        rh_20c = calculate_relative_humidity(vapor_pressure, 293.15)
+
+        # At 30°C (303.15 K) - even higher saturation VP, so even lower RH
+        rh_30c = calculate_relative_humidity(vapor_pressure, 303.15)
+
+        # RH should decrease as temperature increases (for same vapor pressure)
+        assert rh_10c > rh_20c > rh_30c
+
+
+class TestMoistureEdgeCases:
+    """Test edge cases and boundary conditions for moisture calculations."""
+
+    def test_very_low_temperature(self):
+        """Test at very low temperature (Antarctic conditions)."""
+        # -50°C = 223.15 K
+        svp = calculate_saturation_vapor_pressure(223.15)
+        # Should be very low
+        assert 0 < svp < 10  # Very low saturation vapor pressure
+
+    def test_very_high_temperature(self):
+        """Test at very high temperature (near boiling)."""
+        # 95°C = 368.15 K
+        svp = calculate_saturation_vapor_pressure(368.15)
+        # Should be very high (near atmospheric pressure)
+        assert 80000 < svp < 90000
+
+    def test_extreme_dry_conditions(self):
+        """Test extreme dry conditions (desert)."""
+        # 10 Pa vapor pressure at 30°C
+        rh = calculate_relative_humidity(10.0, 303.15)
+        # Should be very low RH
+        assert 0 < rh < 0.01  # Less than 1% RH
+
+    def test_phase_change_boundary(self):
+        """Test near freezing point (phase change boundary)."""
+        # Just below freezing: -0.1°C = 273.05 K
+        svp_below = calculate_saturation_vapor_pressure(273.05)
+
+        # Just above freezing: 0.1°C = 273.25 K
+        svp_above = calculate_saturation_vapor_pressure(273.25)
+
+        # Should show discontinuity at freezing point (different formulas)
+        # Ice formula vs. liquid water formula
+        assert svp_below != pytest.approx(svp_above)

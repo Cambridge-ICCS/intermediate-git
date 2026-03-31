@@ -44,3 +44,43 @@ def calculate_saturation_vapor_pressure(temperature: float) -> float:
         return 611.2 * np.exp(22.46 * temp_c / (temp_c + 272.6))
     else:  # Above freezing (water)
         return 611.2 * np.exp(17.67 * temp_c / (temp_c + 243.5))
+
+
+def calculate_relative_humidity(
+    vapor_pressure: float,
+    temperature: float,
+) -> float:
+    """
+    Calculate relative humidity.
+
+    Parameters
+    ----------
+    vapor_pressure: float
+        Actual vapor pressure in Pascals (Pa)
+    temperature: float
+        Temperature in Kelvin (K)
+
+    Returns
+    -------
+    float
+        Relative humidity as a fraction (0.0 to 1.0)
+
+    Raises
+    ------
+    ValueError
+        If vapor pressure is negative or temperature invalid
+
+    Examples
+    --------
+    >>> rh = calculate_relative_humidity(1500.0, 298.15)
+    >>> print(f"Relative humidity: {rh*100:.1f}%")
+    """
+    if vapor_pressure < 0:
+        error_msg = "Vapor pressure cannot be negative"
+        raise ValueError(error_msg)
+    if temperature <= 0:
+        error_msg = "Temperature must be above absolute zero"
+        raise ValueError(error_msg)
+
+    sat_vp = calculate_saturation_vapor_pressure(temperature)
+    return np.clip(vapor_pressure / sat_vp, 0.0, 1.0)
