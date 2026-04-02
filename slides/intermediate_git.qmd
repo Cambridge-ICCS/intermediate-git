@@ -1,0 +1,142 @@
+---
+output-file: index
+title: "Intermediate git"
+format:
+  revealjs:
+    embed-resources: false
+    slide-number: false
+    chalkboard: false
+    preview-links: auto
+    history: false
+    highlight-style: a11y
+    code-block-height: 100%
+    code-overflow: wrap
+    code-line-numbers: false
+    logo: https://iccs.cam.ac.uk/files/iccs_ucam_combined_reverse_colour.png
+    theme: [dark, custom.scss]
+revealjs-plugins:
+  - attribution
+authors:
+  - name: Jack Atkinson
+    orcid: 0000-0001-5001-4812
+    affiliations: Principal Research Software Engineer <br> ICCS - University of Cambridge
+  - name: Mikolaj Kowalski
+    orcid: 0000-0003-3940-7767
+    affiliations: Research Software Engineer <br> ICCS - University of Cambridge
+date: "2026-07-13"
+---
+
+## Precursors {.smaller .nostretch}
+
+:::: {.columns}
+::: {.column width="55%"}
+#### Slides and Materials
+
+To access links or follow on your own device these slides can be found at:  
+[cambridge-iccs.github.io/intermediate-git](https://cambridge-iccs.github.io/intermediate-git)
+
+\
+
+All materials are available at:
+
+::: {style="font-size: 95%;"}
+
+- [github.com/Cambridge-ICCS/intermediate-git](https://github.com/Cambridge-ICCS/intermediate-git)
+:::
+:::
+::: {.column width="45%"}
+#### Licensing
+
+Except where otherwise noted, these presentation materials are licensed under the Creative Commons
+[Attribution-NonCommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/legalcode) ([CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)) License.
+
+![]( https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc.eu.svg ){width=40% fig-align="center"}
+
+Vectors and icons by [SVG Repo](https://www.svgrepo.com)
+used under [CC0(1.0)](https://creativecommons.org/publicdomain/zero/1.0/deed.en)
+:::
+::::
+
+
+## Precursors {.smaller}
+
+:::: {.columns}
+::: {.column width="70%"}
+- Be nice ([Python code of conduct](https://www.python.org/psf/conduct/))
+- Ask questions whenever they arise.
+  - Someone else is probably wondering the same thing.
+  - For troubleshooting please write a message in the zoom chat and someone will assist you in a thread
+  - For more general queries please raise a hand.
+- We will make mistakes.
+  - You can decide whick of them are intentional.
+:::
+::::
+
+
+## Learning Objectives {.smaller}
+
+
+The key objective of this workshop is to provide knowledge of some higher-level
+functionalities within git beyond basic usage.
+
+We will achieve this through a presentation and accompanying exercises.
+
+:::: {.columns}
+::: {.column width="55%"}
+* A deeper understanding of how git functions under the hood
+* A quick recap of branching in git
+* Merge conflicts and resolution
+* Use of git's stash feature
+* Use of patched commits and amending
+* Rebasing
+* Bisect to locate issue introduction points
+
+:::
+
+::: {.column width="45%"}
+::: {.fragment}
+I suggest you have open:
+
+- A text editor or IDE
+- A terminal window
+- A browser window
+
+:::
+
+:::
+::::
+
+<!-- ============================================================================== -->
+
+## Thanks
+
+:::: {.columns}
+
+::: {.column width="20%"}
+Get in touch:
+:::
+::: {.column width="40%"}
+{{< fa pencil >}} \ Jack Atkinson
+
+{{< fa solid globe >}} \ [jackatkinson.net](https://jackatkinson.net)
+
+{{< fa solid envelope >}} \ [jwa34[AT]cam.ac.uk](mailto:jwa34@cam.ac.uk)
+
+{{< fa brands github >}} \ [jatkinson1000](https://github.com/jatkinson1000)
+
+{{< fa brands mastodon >}} \ [\@jatkinson1000\@hachyderm.io](https://hachyderm.io/@jatkinson1000)
+:::
+::: {.column width="40%"}
+{{< fa pencil >}} \ Mikolaj Kowalski
+
+{{< fa solid envelope >}} \ [jwa34[AT]cam.ac.uk](mailto:mak60@cam.ac.uk)
+
+{{< fa brands github >}} \ [Mikolaj-A-Kowalski](https://github.com/Mikolaj-A-Kowalski)
+:::
+::::
+
+
+## References {.smaller}
+
+::: {#refs}
+:::
