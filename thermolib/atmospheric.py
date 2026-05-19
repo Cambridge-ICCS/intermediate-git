@@ -5,6 +5,7 @@ import numpy as np
 from .constants import (
     GRAVITATIONAL_ACCELERATION,
     SPECIFIC_GAS_CONSTANT_DRY_AIR,
+    SPECIFIC_HEAT_CAPACITY_DRY_AIR,
     STANDARD_ATMOSPHERIC_PRESSURE,
 )
 
@@ -52,3 +53,9 @@ def calculate_air_density(pressure: float, temperature: float) -> float:
         raise ValueError(error_msg)
 
     return pressure / (SPECIFIC_GAS_CONSTANT_DRY_AIR * temperature)
+
+
+# --------- Add functions during the git workshop here ---------
+
+
+# --------------------------------------------------------------
