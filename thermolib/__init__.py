@@ -7,3 +7,12 @@ Note: This library is designed for educational purposes in teaching git
 version control concepts using realistic climate science code.
 It is not intended for real research use.
 """
+
+from thermolib import atmospheric, constants, moisture, radiation
+
+__all__ = [
+    "atmospheric",
+    "constants",
+    "moisture",
+    "radiation",
+]
