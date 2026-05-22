@@ -10,7 +10,7 @@ authors = [
     {name = "Jack Atkinson", email = "jwa34@cam.ac.uk"},
 ]
 readme = "README.md"
-license = {text = "GPLv3"}
+license = {file = "LICENSE"}
 requires-python = ">=3.10"
 classifiers = [
     "Intended Audience :: Science/Research",
@@ -39,6 +39,9 @@ dev = [
 test = [
     "pytest>=7.2.0",
 ]
+
+[tool.setuptools]
+packages = ["thermolib"]
 
 [tool.ruff.lint]
 # See https://docs.astral.sh/ruff/rules for full details of each ruleset.
