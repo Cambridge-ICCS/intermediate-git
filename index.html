@@ -6,10 +6,10 @@
 <script src="intermediate_git_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="intermediate_git_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="intermediate_git_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="intermediate_git_files/libs/quarto-html/quarto-syntax-highlighting-dark-3ff4805f19b0085abba01199065d0a21.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="intermediate_git_files/libs/quarto-html/quarto-syntax-highlighting-dark-70be5ccd51f03de5ce195d75fadf0882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="intermediate_git_files/libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="intermediate_git_files/libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.36">
+  <meta name="generator" content="quarto-1.9.37">
 
   <meta name="dcterms.date" content="2026-07-13">
   <title>Intermediate git</title>
@@ -33,6 +33,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #97947a;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #97947a;  padding-left: 4px; }
+    div.sourceCode
+      { color: #f8f8f2; background-color: #2b2b2b; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #f8f8f2; } /* Normal */
+    code span.al { color: #dcc6e0; } /* Alert */
+    code span.an { color: #d4d0ab; } /* Annotation */
+    code span.at { color: #ffd700; } /* Attribute */
+    code span.bn { color: #dcc6e0; } /* BaseN */
+    code span.bu { color: #f5ab35; } /* BuiltIn */
+    code span.cf { color: #ffa07a; } /* ControlFlow */
+    code span.ch { color: #abe338; } /* Char */
+    code span.cn { color: #ffa07a; } /* Constant */
+    code span.co { color: #d4d0ab; } /* Comment */
+    code span.cv { color: #d4d0ab; font-style: italic; } /* CommentVar */
+    code span.do { color: #d4d0ab; font-style: italic; } /* Documentation */
+    code span.dt { color: #dcc6e0; } /* DataType */
+    code span.dv { color: #dcc6e0; } /* DecVal */
+    code span.er { color: #dcc6e0; } /* Error */
+    code span.ex { color: #ffd700; } /* Extension */
+    code span.fl { color: #f5ab35; } /* Float */
+    code span.fu { color: #ffd700; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #d4d0ab; } /* Information */
+    code span.kw { color: #ffa07a; } /* Keyword */
+    code span.op { color: #00e0e0; } /* Operator */
+    code span.ot { color: #ffa07a; } /* Other */
+    code span.pp { color: #dcc6e0; } /* Preprocessor */
+    code span.sc { color: #00e0e0; } /* SpecialChar */
+    code span.ss { color: #abe338; } /* SpecialString */
+    code span.st { color: #abe338; } /* String */
+    code span.va { color: #f5ab35; } /* Variable */
+    code span.vs { color: #abe338; } /* VerbatimString */
+    code span.wa { color: #d4d0ab; font-style: italic; } /* Warning */
     /* CSS for citations */
     div.csl-bib-body { }
     div.csl-entry {
@@ -53,7 +119,7 @@
     div.csl-indent {
       margin-left: 2em;
     }  </style>
-  <link rel="stylesheet" href="intermediate_git_files/libs/revealjs/dist/theme/quarto-9430a56b1f8e9c84098f19d5360e005e.css">
+  <link rel="stylesheet" href="intermediate_git_files/libs/revealjs/dist/theme/quarto-e19cbf85db3b1d1ab298e94e69f51330.css">
   <link href="intermediate_git_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="intermediate_git_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="intermediate_git_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -146,6 +212,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="intermediate_git_files/libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="intermediate_git_files/libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="intermediate_git_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-dark">
   <div class="reveal">
@@ -226,28 +295,1026 @@ Mikolaj Kowalski <a href="https://orcid.org/0000-0003-3940-7767" class="quarto-t
 <p>We will achieve this through a presentation and accompanying exercises.</p>
 <div class="columns">
 <div class="column" style="width:55%;">
+<div class="fragment semi-fade-out" data-fragment-index="1">
 <ul>
-<li>A deeper understanding of how git functions under the hood</li>
-<li>A quick recap of branching in git</li>
-<li>Merge conflicts and resolution</li>
-<li>Use of git’s stash feature</li>
-<li>Use of patched commits and amending</li>
+<li>A deeper understanding of how git functions</li>
+<li>A recap of branching</li>
+<li>Stashing</li>
+<li>Patched and amended commits</li>
 <li>Rebasing</li>
+<li>Merge conflicts and resolution</li>
 <li>Bisect to locate issue introduction points</li>
 </ul>
+</div>
 </div><div class="column" style="width:45%;">
-<div class="fragment">
+<div class="fragment" data-fragment-index="1">
 <p>I suggest you have open:</p>
 <ul>
-<li>A text editor or IDE</li>
-<li>A terminal window</li>
-<li>A browser window</li>
+<li>A <strong>text editor</strong> or <strong>IDE</strong>
+<ul>
+<li>to edit code</li>
+</ul></li>
+<li>A <strong>terminal window</strong>
+<ul>
+<li>to run git</li>
+</ul></li>
+<li>A <strong>browser window</strong>
+<ul>
+<li>to follow these slides</li>
+</ul></li>
 </ul>
 </div>
 </div></div>
 <!-- ============================================================================== -->
 </section>
-<section id="thanks" class="slide level2">
+<section>
+<section id="setup" class="title-slide slide level1 center">
+<h1>Setup</h1>
+
+</section>
+<section id="setup-1" class="slide level2 smaller">
+<h2>Setup</h2>
+<ol type="1">
+<li><p>Clone the repository (or use your fork):</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="" aria-hidden="true" tabindex="-1"></a>git clone https://github.com/Cambridge-ICCS/intermediate-git.git</span>
+<span id="cb1-2"><a href="" aria-hidden="true" tabindex="-1"></a>cd intermediate-git</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Create a Python virtual environment and install the library:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="" aria-hidden="true" tabindex="-1"></a>python3 -m venv int-git-venv</span>
+<span id="cb2-2"><a href="" aria-hidden="true" tabindex="-1"></a>source int-git-venv/bin/activate</span>
+<span id="cb2-3"><a href="" aria-hidden="true" tabindex="-1"></a>pip install --editable .</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Verify everything works:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb3-1"><a href="" aria-hidden="true" tabindex="-1"></a>(int-git-venv) $ python3</span>
+<span id="cb3-2"><a href="" aria-hidden="true" tabindex="-1"></a>Python 3</span>
+<span id="cb3-3"><a href="" aria-hidden="true" tabindex="-1"></a>Type "help", "copyright", "credits" or "license" for more information.</span>
+<span id="cb3-4"><a href="" aria-hidden="true" tabindex="-1"></a>&gt;&gt;&gt; from thermolib import constants, moisture</span>
+<span id="cb3-5"><a href="" aria-hidden="true" tabindex="-1"></a>&gt;&gt;&gt; constants.UNIVERSAL_GAS_CONSTANT</span>
+<span id="cb3-6"><a href="" aria-hidden="true" tabindex="-1"></a>8.314462618</span>
+<span id="cb3-7"><a href="" aria-hidden="true" tabindex="-1"></a>&gt;&gt;&gt; moisture.calculate_relative_humidity(vapor_pressure=1500.0, temperature=298.15)</span>
+<span id="cb3-8"><a href="" aria-hidden="true" tabindex="-1"></a>np.float64(0.4735701395152745)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+</ol>
+<!-- ============================================================================== -->
+</section></section>
+<section>
+<section id="background" class="title-slide slide level1 center">
+<h1>Background</h1>
+
+</section>
+<section id="what-is-git" class="slide level2 smaller">
+<h2>What is git?</h2>
+<ul>
+<li>a version control system developed by Linus Torvalds.<sup>1</sup></li>
+<li>tracks changes made to files over time.</li>
+<li>an entire suite of associated tools.</li>
+</ul>
+<p><img data-src="images/alice_rabbit_hole.jpg" class="absolute" style="top: 33%; left: 30%; width: 40%; "></p>
+<div class="attribution">
+<p>Rabbit hole from Disney’s Alice in Wonderland under fair use</p>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>Also the creator of Linux</p></li></ol></aside></section>
+<section id="a-warning" class="slide level2 smaller">
+<h2>A Warning</h2>
+
+<img data-src="images/lost_work_b0rk.jpg" class="r-stretch"><div class="attribution">
+<p><a href="https://fosstodon.org/@b0rk@jvns.ca/111920509893059355">Julia Evans - @b0rk</a></p>
+</div>
+</section>
+<section id="how-does-git-work" class="slide level2 smaller">
+<h2>How does git work?</h2>
+<p>A mental model:</p>
+<ul>
+<li>Each time you <code>commit</code> work git stores it as a <code>diff</code>.
+<ul>
+<li>This shows specific lines of a file and how they changed (<code>+</code>/<code>-</code>).</li>
+<li>This is what you see with the <code>git diff</code> command.</li>
+</ul></li>
+<li><code>diff</code>s are stored in a <code>tree</code>.
+<ul>
+<li>By applying each <code>diff</code> one at a time we can reconstruct files.</li>
+<li>We do not need to do this in order<br>
+see cherry-picking and merge conflicts…</li>
+</ul></li>
+</ul>
+<!----------------------------------------------------------------------------------->
+</section>
+<section id="how-does-git-work-1" class="slide level2 smaller">
+<h2>How does git work?</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" data-code-line-numbers="|1,3-4|5|5-8,11-15,17-19|5-11,16-19"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href=""></a>diff <span class="op">--</span>git a<span class="op">/</span>mycode<span class="op">/</span>functions.py b<span class="op">/</span>mycode<span class="op">/</span>functions.py</span>
+<span id="cb4-2"><a href=""></a>index b784b07..d08024a <span class="dv">100644</span></span>
+<span id="cb4-3"><a href=""></a><span class="op">---</span> a<span class="op">/</span>mycode<span class="op">/</span>functions.py</span>
+<span id="cb4-4"><a href=""></a><span class="op">+++</span> b<span class="op">/</span>mycode<span class="op">/</span>functions.py</span>
+<span id="cb4-5"><a href=""></a><span class="op">@@</span> <span class="op">-</span><span class="dv">340</span>,<span class="dv">11</span> <span class="op">+</span><span class="dv">341</span>,<span class="dv">10</span> <span class="op">@@</span> <span class="kw">def</span> rootfind(</span>
+<span id="cb4-6"><a href=""></a>         f_old <span class="op">=</span> f_new</span>
+<span id="cb4-7"><a href=""></a>         <span class="cf">if</span> <span class="bu">abs</span>(s_new) <span class="op">&gt;</span> delta:</span>
+<span id="cb4-8"><a href=""></a>             x_new <span class="op">+=</span> s_new</span>
+<span id="cb4-9"><a href=""></a><span class="op">+</span>        <span class="cf">elif</span> s_bisect <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb4-10"><a href=""></a><span class="op">+</span>            x_new <span class="op">+=</span> delta</span>
+<span id="cb4-11"><a href=""></a>         <span class="cf">else</span>:</span>
+<span id="cb4-12"><a href=""></a><span class="op">-</span>            <span class="cf">if</span> s_bisect <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb4-13"><a href=""></a><span class="op">-</span>                x_new <span class="op">+=</span> delta</span>
+<span id="cb4-14"><a href=""></a><span class="op">-</span>            <span class="cf">else</span>:</span>
+<span id="cb4-15"><a href=""></a><span class="op">-</span>                x_new <span class="op">-=</span> delta</span>
+<span id="cb4-16"><a href=""></a><span class="op">+</span>            x_new <span class="op">-=</span> delta</span>
+<span id="cb4-17"><a href=""></a></span>
+<span id="cb4-18"><a href=""></a>         f_new <span class="op">=</span> f_root(x_new, score)</span>
+<span id="cb4-19"><a href=""></a>         val <span class="op">=</span> x_new</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<aside class="notes">
+<ul>
+<li>Famous George Box quote</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div class="attribution">
+<p><span class="citation" data-cites="Mukerjee_2024_unpacking">Mukerjee (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span></p>
+</div>
+<!----------------------------------------------------------------------------------->
+</section>
+<section id="how-does-git-work-2" class="slide level2 smaller">
+<h2>How does git work?</h2>
+<p>Actually:</p>
+<ul>
+<li>Each time you <code>commit</code> work git creates a <code>snapshot</code>
+<ul>
+<li>Contains the commit message, a hash to a <code>tree</code>, and a pointer to a parent.</li>
+</ul></li>
+<li>The <code>tree</code> is a list of files in the repo at this commit.
+<ul>
+<li>In reality it is a <code>tree</code> of <code>tree</code>s for efficiency!</li>
+<li>The roots of the tree are <code>pack</code>ed files at time of commit.</li>
+</ul></li>
+<li><code>pack</code>ed files are efficiently compressed.
+<ul>
+<li>And may use <code>delta</code>s which are a bit like <code>diff</code>s.</li>
+</ul></li>
+<li>By tracing the tree and then un<code>pack</code>ing we can reconstruct the repo at a state in time given by the commit hash.</li>
+</ul>
+</section>
+<section id="how-does-git-work-3" class="slide level2 smaller">
+<h2>How does git work?</h2>
+<p>Implications:</p>
+<ul>
+<li>commits are immutable, but</li>
+<li>we can always make new commits, change the parent, and point a branch at them.
+<ul>
+<li>see <code>amend</code>, <code>rebase</code>, <code>cherry-pick</code>…</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Famous George Box quote</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!-- ============================================================================== -->
+</section></section>
+<section>
+<section id="branches-recap" class="title-slide slide level1 center">
+<h1>Branches (recap)</h1>
+
+</section>
+<section id="branches" class="slide level2 smaller">
+<h2>Branches</h2>
+<p>If we always work in <code>main</code> our commits appear linearly as we make them:</p>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">    %%{init: {'theme': 'dark',
+              'gitGraph': {'rotateCommitLabel': true},
+              'themeVariables': {
+                  'commitLabelBackground': '#bbbbbb',
+                  'commitLabelColor': '#ffffff'
+    } } }%%
+    gitGraph
+       commit id: "1-ad4e"
+       commit id: "4-ff6b"
+       commit id: "0-fd7f"
+       commit id: "1-2y4f"
+       commit id: "4-664e"
+       commit id: "6-d3et"
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>But what if:</p>
+<ul>
+<li>Someone else is modifying the same files as us?</li>
+<li>We are working on different aspects/features of the project in parallel?</li>
+<li>We find a bug and need to quickly fix it?</li>
+</ul>
+</section>
+<section id="branches-1" class="slide level2 smaller">
+<h2>Branches</h2>
+<p>Branches help with all of the aforementioned situations, but are a sensible way to organise your work even if you are the only contributor.</p>
+<div class="columns">
+<div class="column" style="width:55%;">
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">    %%{init: {'theme': 'base',
+              'gitGraph': {'rotateCommitLabel': true},
+              'themeVariables': {
+                  'commitLabelBackground': '#bbbbbb',
+                  'commitLabelColor': '#ffffff'
+    } } }%%
+    gitGraph
+       commit id: "4-ff6b"
+       commit id: "0-fd7f"
+       commit id: "fea 1.a"
+       commit id: "fea 1.b"
+       commit id: "fea 1.c"
+       commit id: "fea 1.d"
+       commit id: "5-af6f"
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Conduct development in branches and merged into main when completed:</p>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">    %%{init: {'theme': 'base',
+              'gitGraph': {'rotateCommitLabel': true},
+              'themeVariables': {
+                  'commitLabelBackground': '#bbbbbb',
+                  'commitLabelColor': '#ffffff'
+    } } }%%
+    gitGraph
+       commit id: "4-ff6b"
+       commit id: "0-fd7f"
+       branch feature
+       commit id: "fea 1.a"
+       commit id: "fea 1.b"
+       commit id: "fea 1.c"
+       commit id: "fea 1.d"
+       checkout main
+       merge feature
+       commit id: "5-af6f"
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:45%;">
+<ul>
+<li><code>git branch &lt;branchname&gt;</code>
+<ul>
+<li>Creates new branch <em>branchname</em> from current point</li>
+</ul></li>
+<li><code>git checkout &lt;branchname&gt;</code>
+<ul>
+<li>move to branch <em>branchname</em></li>
+<li>Updates local files - beware</li>
+</ul></li>
+<li><code>git merge &lt;branchname&gt;</code>
+<ul>
+<li>Tie the <em>branchname</em> branch into the current checked out branch with a merge commit.</li>
+</ul></li>
+</ul>
+</div></div>
+
+<!----------------------------------------------------------------------------------->
+<aside><div>
+<p>Note: We can always review our branches using <code>git branch -v</code>.</p>
+</div></aside></section>
+<section id="branches-2" class="slide level2 smaller">
+<h2>Branches</h2>
+<p>This comes into its own when working concurrently on different features.<br>
+<strong>git is not just about backups – it is about project organisation.</strong></p>
+<div class="fragment">
+<p>This way danger and obscurity lies:</p>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">    %%{init: {'theme': 'base',
+              'gitGraph': {'rotateCommitLabel': true},
+              'themeVariables': {
+                  'commitLabelBackground': '#bbbbbb',
+                  'commitLabelColor': '#ffffff'
+    } } }%%
+    gitGraph
+       commit id: "4-ff6b"
+       commit id: "0-fd7f"
+       commit id: "fea 1.a"
+       commit id: "fea 1.b"
+       commit id: "fea 2.a"
+       commit id: "fea 1.c"
+       commit id: "fea 2.b"
+       commit id: "5-af6f"
+       commit id: "1-ad4e"
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>This is manageable and <em>understandable</em>:</p>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">    %%{init: {'theme': 'base',
+              'gitGraph': {'rotateCommitLabel': true},
+              'themeVariables': {
+                  'commitLabelBackground': '#bbbbbb',
+                  'commitLabelColor': '#ffffff'
+    } } }%%
+    gitGraph
+       commit id: "4-ff6b"
+       commit id: "0-fd7f"
+       branch feature_1
+       commit id: "fea 1.a"
+       commit id: "fea 1.b"
+       checkout main
+       branch feature_2
+       commit id: "fea 2.a"
+       checkout feature_1
+       commit id: "fea 1.c"
+       checkout main
+       merge feature_1
+       checkout feature_2
+       commit id: "fea 2.b"
+       checkout main
+       merge feature_2
+       commit id: "5-af6f"
+       commit id: "1-ad4e"
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
+<!----------------------------------------------------------------------------------->
+</section>
+<section id="branches-3" class="slide level2 smaller">
+<h2>Branches</h2>
+<p>The examples so far have been quite simple, but this gives a good audiovisual example of the power of branches:</p>
+<iframe width="100%" height="70%" src="https://www.youtube.com/embed/S9Do2p4PwtE?si=aZbDMSksmq2UOfJV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
+</iframe>
+<!-- ============================================================================== -->
+</section>
+<section id="exercise-1" class="slide level2 smaller">
+<h2>Exercise 1</h2>
+<p>Create a new branch to add an equation for <strong>hydrostatic pressure</strong> to <code>thermolib/atmospheric.py</code>.</p>
+<p><span class="math display">\[
+P = P_0 \cdot \exp(-gz / (RT))
+\]</span></p>
+<p>where <span class="math inline">\(g\)</span> is gravity, <span class="math inline">\(z\)</span> is height, <span class="math inline">\(R\)</span> is the gas constant, <span class="math inline">\(T\)</span> is temperature, and <span class="math inline">\(P_0\)</span> is the surface reference pressure.</p>
+
+<aside><div>
+<p>The gas constant and gravity are already available in <code>constants.py</code> and imported into <code>atmospheric.py</code>.</p>
+</div></aside></section>
+<section id="exercise-1-solution-python" class="slide level2 smaller">
+<h2>Exercise 1 — Solution (Python)</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_hydrostatic_pressure(</span>
+<span id="cb5-2"><a href="" aria-hidden="true" tabindex="-1"></a>    height: <span class="bu">float</span>,</span>
+<span id="cb5-3"><a href="" aria-hidden="true" tabindex="-1"></a>    surface_pressure: <span class="bu">float</span>,</span>
+<span id="cb5-4"><a href="" aria-hidden="true" tabindex="-1"></a>    temperature: <span class="bu">float</span>,</span>
+<span id="cb5-5"><a href="" aria-hidden="true" tabindex="-1"></a>) <span class="op">-&gt;</span> <span class="bu">float</span>:</span>
+<span id="cb5-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> surface_pressure <span class="op">*</span> np.exp(</span>
+<span id="cb5-7"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="op">-</span>GRAVITATIONAL_ACCELERATION</span>
+<span id="cb5-8"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="op">*</span> height</span>
+<span id="cb5-9"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="op">/</span> (SPECIFIC_GAS_CONSTANT_DRY_AIR <span class="op">*</span> temperature)</span>
+<span id="cb5-10"><a href="" aria-hidden="true" tabindex="-1"></a>    )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="exercise-1-solution-git" class="slide level2 smaller">
+<h2>Exercise 1 — Solution (Git)</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb6-1"><a href="" aria-hidden="true" tabindex="-1"></a>git checkout -b pressure-eqn</span>
+<span id="cb6-2"><a href="" aria-hidden="true" tabindex="-1"></a># &lt;edit thermolib/atmospheric.py and save&gt;</span>
+<span id="cb6-3"><a href="" aria-hidden="true" tabindex="-1"></a>git add thermolib/atmospheric.py</span>
+<span id="cb6-4"><a href="" aria-hidden="true" tabindex="-1"></a>git commit -m "Add hydrostatic-pressure equation to thermolib/atmospheric."</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<!-- ============================================================================== -->
+</section></section>
+<section>
+<section id="amending-commits" class="title-slide slide level1 center">
+<h1>Amending Commits</h1>
+
+</section>
+<section id="amending-commits-1" class="slide level2 smaller">
+<h2>Amending Commits</h2>
+<p>It would be good to have included documentation and error-checking in the code.</p>
+<p>We <em>could</em> make a new commit, but it makes more sense for these additions to be part of the same commit; we want a clean history.</p>
+<p><br>
+</p>
+<div class="fragment">
+<p>Enter <code>git commit --amend</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb7-1"><a href="" aria-hidden="true" tabindex="-1"></a># Make your changes, stage them, then:</span>
+<span id="cb7-2"><a href="" aria-hidden="true" tabindex="-1"></a>git commit --amend</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div style="font-size: 80%;">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Flag</th>
+<th style="text-align: center;">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">None</td>
+<td style="text-align: center;">Open an interactive window to edit the existing message</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>-m "new message"</code></td>
+<td style="text-align: center;">Overwrite the previous commit message</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>--no-edit</code></td>
+<td style="text-align: center;">Keep the existing message</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<aside><div>
+<p>Note: <code>--amend</code> replaces the old commit with a new one (complete with new hash), effectively <strong>rewriting history</strong> for the branch.<br>
+We should only use it on our commits in our branch, not on code by others or already on <code>main</code>.</p>
+</div></aside></section>
+<section id="when-is-it-useful" class="slide level2 smaller">
+<h2>When is it useful?</h2>
+<ul>
+<li>You forgot to add a file.</li>
+<li>You forgot to change something.</li>
+<li>You added something that shouldn’t be in this commit.
+<ul>
+<li>for files: <code>git rm --cached</code></li>
+<li>for code: <code>git reset --soft</code> and <code>git restore --staged</code></li>
+</ul></li>
+<li>You forgot to run formatting/linting.</li>
+<li>You made a typo in your commit message.</li>
+</ul>
+</section>
+<section id="exercise-2" class="slide level2 smaller">
+<h2>Exercise 2</h2>
+<p>Return to <code>pressure-eqn</code> and add a docstring and input validation to your <code>calculate_hydrostatic_pressure</code> function.</p>
+<p>Amend your previous commit to include these additions.</p>
+<p><br>
+</p>
+<p>Hint: You can find example code on the next slide.</p>
+
+<aside><div>
+<p>Tip: Since you’re only modifying a tracked file you can stage all changes with:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb8-1"><a href="" aria-hidden="true" tabindex="-1"></a>git add -u</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div></aside></section>
+<section id="exercise-2-solution-python" class="slide level2 smaller">
+<h2>Exercise 2 — Solution (Python)</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb9-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">    Calculate pressure at height using hydrostatic equation.</span></span>
+<span id="cb9-3"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">    Describes how atmospheric pressure decreases with altitude. Uses the formula:</span></span>
+<span id="cb9-5"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">    P = P0 * exp(-g*z/(R*T)) where g is gravity, z is height, R is gas constant, T is temperature.</span></span>
+<span id="cb9-6"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">    Parameters</span></span>
+<span id="cb9-8"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">    ----------</span></span>
+<span id="cb9-9"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">    height : float</span></span>
+<span id="cb9-10"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">        Height above surface in meters (m)</span></span>
+<span id="cb9-11"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">    surface_pressure : float</span></span>
+<span id="cb9-12"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">        Surface pressure in Pascals (Pa)</span></span>
+<span id="cb9-13"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">    temperature : float</span></span>
+<span id="cb9-14"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">        Temperature in Kelvin (K)</span></span>
+<span id="cb9-15"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-16"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns</span></span>
+<span id="cb9-17"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">    -------</span></span>
+<span id="cb9-18"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">    float</span></span>
+<span id="cb9-19"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">        Pressure at specified height in Pascals (Pa)</span></span>
+<span id="cb9-20"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-21"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">    Raises</span></span>
+<span id="cb9-22"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">    ------</span></span>
+<span id="cb9-23"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">    ValueError</span></span>
+<span id="cb9-24"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">        If height is negative, surface pressure is not positive, or temperature is not positive</span></span>
+<span id="cb9-25"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb9-26"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> height <span class="op">&lt;</span> <span class="dv">0</span>:</span>
+<span id="cb9-27"><a href="" aria-hidden="true" tabindex="-1"></a>        error_msg <span class="op">=</span> <span class="st">"Height cannot be negative in atmospheric calculations"</span></span>
+<span id="cb9-28"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">ValueError</span>(error_msg)</span>
+<span id="cb9-29"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> surface_pressure <span class="op">&lt;=</span> <span class="dv">0</span>:</span>
+<span id="cb9-30"><a href="" aria-hidden="true" tabindex="-1"></a>        error_msg <span class="op">=</span> <span class="st">"Surface pressure must be positive"</span></span>
+<span id="cb9-31"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">ValueError</span>(error_msg)</span>
+<span id="cb9-32"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> temperature <span class="op">&lt;=</span> <span class="dv">0</span>:</span>
+<span id="cb9-33"><a href="" aria-hidden="true" tabindex="-1"></a>        error_msg <span class="op">=</span> <span class="st">"Temperature must be positive"</span></span>
+<span id="cb9-34"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">ValueError</span>(error_msg)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="exercise-2-solution-git" class="slide level2 smaller">
+<h2>Exercise 2 — Solution (Git)</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb10-1"><a href="" aria-hidden="true" tabindex="-1"></a># &lt;edit file to add docstrings &amp; validation&gt;</span>
+<span id="cb10-2"><a href="" aria-hidden="true" tabindex="-1"></a>git add -u</span>
+<span id="cb10-3"><a href="" aria-hidden="true" tabindex="-1"></a>git commit --amend --no-edit</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><br>
+</p>
+<p>You still have one commit on <code>pressure-eqn</code>, but now it contains the full implementation and has a different hash.</p>
+<!-- ============================================================================== -->
+</section></section>
+<section>
+<section id="git-stash" class="title-slide slide level1 center">
+<h1>Git Stash</h1>
+
+</section>
+<section id="exercise-3.1" class="slide level2 smaller">
+<h2>Exercise 3.1</h2>
+<p>To illustrate the benefits of git stash we will start with an exercise adding a new feature (equation) to our code.</p>
+<p><br>
+</p>
+<p>Add an equation for <strong>potential temperature</strong> <span class="math inline">\(\Theta\)</span> on a <em>new</em> branch:</p>
+<p><span class="math display">\[
+\Theta = T \cdot (P_0 / P)^{(R / c_p)}
+\]</span></p>
+<p>where <span class="math inline">\(c_p\)</span> is the specific heat capacity of dry air at constant pressure.</p>
+<p><br>
+</p>
+<p>Best practice says that for a new feature we should do this in new branch from <code>main</code>.</p>
+
+<aside><div>
+<p><span class="math inline">\(c_p\)</span> is defined in <code>constants.py</code> as <code>SPECIFIC_HEAT_CAPACITY_DRY_AIR</code>.</p>
+</div></aside></section>
+<section id="exercise-3.1-solution-python" class="slide level2 smaller">
+<h2>Exercise 3.1 — Solution (Python)</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_potential_temperature(</span>
+<span id="cb11-2"><a href="" aria-hidden="true" tabindex="-1"></a>    temperature: <span class="bu">float</span>, pressure: <span class="bu">float</span>, reference_pressure: <span class="bu">float</span> <span class="op">=</span> <span class="fl">100000.0</span></span>
+<span id="cb11-3"><a href="" aria-hidden="true" tabindex="-1"></a>) <span class="op">-&gt;</span> <span class="bu">float</span>:</span>
+<span id="cb11-4"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> temperature <span class="op">*</span> (reference_pressure <span class="op">/</span> pressure) <span class="op">**</span> (</span>
+<span id="cb11-5"><a href="" aria-hidden="true" tabindex="-1"></a>        SPECIFIC_GAS_CONSTANT_DRY_AIR <span class="op">/</span> SPECIFIC_HEAT_CAPACITY_DRY_AIR</span>
+<span id="cb11-6"><a href="" aria-hidden="true" tabindex="-1"></a>    )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="exercise-3.1-solution-git" class="slide level2 smaller">
+<h2>Exercise 3.1 — Solution (Git)</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb12-1"><a href="" aria-hidden="true" tabindex="-1"></a>git checkout main</span>
+<span id="cb12-2"><a href="" aria-hidden="true" tabindex="-1"></a>git checkout -b pot-temp-eqn</span>
+<span id="cb12-3"><a href="" aria-hidden="true" tabindex="-1"></a># &lt;edit thermolib/atmospheric.py and save&gt;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><br>
+</p>
+<p><strong>Do not commit your code yet</strong> — we’re about to be interrupted.</p>
+</section>
+<section id="git-stash-1" class="slide level2 smaller">
+<h2>Git Stash</h2>
+<p>You’re halfway through implementing <code>calculate_potential_temperature</code> when a colleague urgently needs the pressure equation merged to <code>main</code>.</p>
+<p><br>
+</p>
+<p>If you try to switch branches:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb13-1"><a href="" aria-hidden="true" tabindex="-1"></a>git checkout main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>you get:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb14-1"><a href="" aria-hidden="true" tabindex="-1"></a>error: Your local changes to the following files would be overwritten by checkout:</span>
+<span id="cb14-2"><a href="" aria-hidden="true" tabindex="-1"></a>        thermolib/atmospheric.py</span>
+<span id="cb14-3"><a href="" aria-hidden="true" tabindex="-1"></a>Please commit your changes or stash them before you switch branches.</span>
+<span id="cb14-4"><a href="" aria-hidden="true" tabindex="-1"></a>Aborting</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><br>
+</p>
+<p>You <em>could</em> commit WIP and amend later, but <strong><code>git stash</code></strong> is designed for this.</p>
+</section>
+<section id="what-is-git-stash" class="slide level2 smaller">
+<h2>What is <code>git stash</code>?</h2>
+<p><code>git stash</code> temporarily “stashes” (shelves) your uncommitted changes (staged and unstaged) returning your working directory to the HEAD state.</p>
+<p><br>
+</p>
+<p>The changes are stored on a FILO stack known as the stash.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Command</th>
+<th style="text-align: left;">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>git stash push</code></td>
+<td style="text-align: left;">Shelve changes</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>git stash list</code></td>
+<td style="text-align: left;">View all stashed items</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>git stash pop</code></td>
+<td style="text-align: left;">Apply and remove the top stash</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>git stash show</code></td>
+<td style="text-align: left;">Summary of what would be applied</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>git stash drop</code></td>
+<td style="text-align: left;">Remove a stash entry (after manual resolution)</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+</p>
+<p>After stashing, your working directory is clean and you can freely switch branches.</p>
+</section>
+<section id="when-is-it-useful-1" class="slide level2 smaller">
+<h2>When is it useful?</h2>
+<p><br>
+</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Scenario</th>
+<th style="text-align: left;">Why stash helps</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Working on the wrong branch</td>
+<td style="text-align: left;">Stash, switch, pop on correct branch</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Need to pull remote changes</td>
+<td style="text-align: left;">Stash, pull, pop</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Urgent fix on another branch</td>
+<td style="text-align: left;">Stash, fix, commit, pop</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Want to test/format only part of a commit</td>
+<td style="text-align: left;">Stash the rest, test, pop</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="exercise-3.2" class="slide level2 smaller">
+<h2>Exercise 3.2</h2>
+<p>Stash your work on the <code>pot-temp-eqn</code> branch, return to <code>main</code> and merge in the <code>pressure-eqn</code> branch.</p>
+<p><br>
+</p>
+<p>Once this is done, return to <code>pot-temp-eqn</code> and <code>pop</code> your work-in-progress from the stash. Complete the implementation of the potential temperature equation and then commit it.</p>
+</section>
+<section id="exercise-3.2-solution-git" class="slide level2 smaller">
+<h2>Exercise 3.2 — Solution (Git)</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb15-1"><a href="" aria-hidden="true" tabindex="-1"></a>git stash push</span>
+<span id="cb15-2"><a href="" aria-hidden="true" tabindex="-1"></a>git stash list</span>
+<span id="cb15-3"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="" aria-hidden="true" tabindex="-1"></a>git checkout main</span>
+<span id="cb15-5"><a href="" aria-hidden="true" tabindex="-1"></a>git merge pressure-eqn</span>
+<span id="cb15-6"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="" aria-hidden="true" tabindex="-1"></a>git checkout pot-temp-eqn</span>
+<span id="cb15-8"><a href="" aria-hidden="true" tabindex="-1"></a>git stash pop</span>
+<span id="cb15-9"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-10"><a href="" aria-hidden="true" tabindex="-1"></a># &lt;finish editing thermolib/atmospheric.py and save&gt;</span>
+<span id="cb15-11"><a href="" aria-hidden="true" tabindex="-1"></a>git add thermolib/atmospheric.py</span>
+<span id="cb15-12"><a href="" aria-hidden="true" tabindex="-1"></a>git commit -m "Add potential temperature equation to thermolib/atmospheric."</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<!-- ============================================================================== -->
+</section></section>
+<section>
+<section id="git-rebase-and-merge-conflicts" class="title-slide slide level1 center">
+<h1>Git Rebase and Merge Conflicts</h1>
+
+</section>
+<section id="rebasing" class="slide level2 smaller">
+<h2>Rebasing</h2>
+<p><code>git rebase</code> rewrites history by <strong>replaying commits</strong> on top of a new base.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Before rebase</strong></p>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'theme': 'base', 'gitGraph': {'rotateCommitLabel': true}}}%%
+gitGraph
+   commit id: "A"
+   commit id: "B"
+   branch feature
+   commit id: "D"
+   commit id: "E"
+   checkout main
+   commit id: "C"
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p><strong>After rebase</strong></p>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'theme': 'base', 'gitGraph': {'rotateCommitLabel': true}}}%%
+gitGraph
+   commit id: "A"
+   commit id: "B"
+   commit id: "C"
+   branch feature
+   commit id: "D'"
+   commit id: "E'"
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb16-1"><a href="" aria-hidden="true" tabindex="-1"></a>git checkout feature</span>
+<span id="cb16-2"><a href="" aria-hidden="true" tabindex="-1"></a>git rebase main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><br>
+</p>
+<p>As well as a branch to rebase on we can also specify a commit hash, tag etc.</p>
+</section>
+<section id="rebasing-tips" class="slide level2 smaller">
+<h2>Rebasing tips</h2>
+<ul>
+<li>Interactive rebase
+<ul>
+<li>Opens an editor to provide more control over what we do with each commit.
+<ul>
+<li>edit, reorder, squash, fixup, reword, or drop commits.</li>
+</ul></li>
+<li><code>git rebase -i main</code></li>
+<li>Allows editing of previous commits – amend for earlier in history</li>
+</ul></li>
+<li>Use <code>--onto</code> to specify exactly the commits to rebase
+<ul>
+<li><code>git rebase --onto main HEAD~3</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="merge-conflicts" class="slide level2 smaller">
+<h2>Merge Conflicts</h2>
+<p>A merge conflict occurs when we are moving around commits and two commits modify the same lines in a file.</p>
+<p>Often git can figure out what to do, but sometimes it isn;t clear and we need to decide which version to keep.</p>
+<p>This will apepar in the file as:</p>
+<pre><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+your version of the code
+=======
+their version of the code
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; their-branch</code></pre>
+<h3 id="resolution-strategies">Resolution strategies</h3>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Strategy</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Keep ours</td>
+<td>Accept the local version</td>
+</tr>
+<tr class="even">
+<td>Keep theirs</td>
+<td>Accept the incoming version</td>
+</tr>
+<tr class="odd">
+<td>Manual edit</td>
+<td>Edit the file to merge both</td>
+</tr>
+<tr class="even">
+<td>Use a tool</td>
+<td><code>git mergetool</code> opens your configured diff tool</td>
+</tr>
+</tbody>
+</table>
+<p>After resolving: <code>git add &lt;file&gt;</code> then <code>git commit</code> (or <code>git merge --continue</code>).</p>
+<h3 id="preventing-conflicts">Preventing conflicts</h3>
+<ul>
+<li>Communicate with your team</li>
+<li>Pull frequently and merge early</li>
+<li>Keep branches short-lived</li>
+</ul>
+</section>
+<section id="exercise-4" class="slide level2 smaller">
+<h2>Exercise 4</h2>
+<p>It would be a good idea to rebase our <code>pot-temp-eqn</code> on <code>main</code> to pick up the merged changes from <code>pressure-eqn</code>.</p>
+<p>Since this edited the <code>atmospheric.py</code> in the same location it will create a <strong>merge conflict</strong>.</p>
+<p>Resolve the conflict cleanly in your editor, <code>add</code> the result, and <code>continue</code> the rebase until complete.</p>
+<p>Finish off by returning to main and merging in the rebased <code>pot-temp-eqn</code> branch.</p>
+<p>Hint: We want to keep <strong>both</strong> functions.</p>
+</section>
+<section id="exercise-4-solution" class="slide level2 smaller">
+<h2>Exercise 4 — Solution</h2>
+<pre class="text"><code>git checkout pot-temp-eqn
+git rebase main
+&lt;resolve the merge conflict, add, and continue to complete the rebase&gt;
+git checkout main
+git merge pot-temp-eqn</code></pre>
+<!-- ============================================================================== -->
+</section></section>
+<section>
+<section id="patching-additions" class="title-slide slide level1 center">
+<h1>Patching Additions</h1>
+
+</section>
+<section id="patching-staged-additions" class="slide level2 smaller">
+<h2>Patching Staged Additions</h2>
+<p>Sometimes you might have edited several parts of a single file during your work, but want to split your changes into separate logical commits.</p>
+<p><code>git add -p</code> (<code>git add --patch</code>) allows us to do this by working through each change “hunk” and asking what we should do:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Key</th>
+<th style="text-align: left;">Action</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>y</code></td>
+<td style="text-align: left;">Stage this hunk</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>n</code></td>
+<td style="text-align: left;">Skip this hunk</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>s</code></td>
+<td style="text-align: left;">Split hunk into smaller parts</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>e</code></td>
+<td style="text-align: left;">Manually edit the hunk</td>
+</tr>
+</tbody>
+</table>
+<p>After staging selected hunks, commit them. Remaining changes stay in your working directory for a future commit.</p>
+</section>
+<section id="exercise-5" class="slide level2 smaller">
+<h2>Exercise 5</h2>
+<p>Make two distinct changes to <code>thermolib/constants.py</code>:</p>
+<ol type="1">
+<li><p>Update the <code>STANDARD_TEMPERATURE</code> comment:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="" aria-hidden="true" tabindex="-1"></a>STANDARD_TEMPERATURE <span class="op">=</span> <span class="fl">288.15</span>  <span class="co"># Standard temperature (K) at sea level</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Add a new constant after the temperature setting:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="" aria-hidden="true" tabindex="-1"></a>LATENT_HEAT_VAPORIZATION <span class="op">=</span> <span class="fl">2.5e6</span>  <span class="co"># Latent heat of vaporization (J/kg)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+</ol>
+<p>These are separate hunks in the same file. Use <code>git add -p</code> to stage and commit only the second change, then stage and commit the first:</p>
+</section>
+<section id="exercise-5---solution" class="slide level2 smaller">
+<h2>Exercise 5 - Solution</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb21-1"><a href="" aria-hidden="true" tabindex="-1"></a>&lt;edit thermolib/constants.py as described in the exercise and save.&gt;</span>
+<span id="cb21-2"><a href="" aria-hidden="true" tabindex="-1"></a>git add -p thermolib/constants.py</span>
+<span id="cb21-3"><a href="" aria-hidden="true" tabindex="-1"></a>&lt;Stage the LATENT_HEAT_VAPORIZATION (y), skip the STANDARD_TEMPERATURE (n)&gt;</span>
+<span id="cb21-4"><a href="" aria-hidden="true" tabindex="-1"></a>git commit -m "Add latent heat of vaporization constant"</span>
+<span id="cb21-5"><a href="" aria-hidden="true" tabindex="-1"></a>git add -p thermolib/constants.py</span>
+<span id="cb21-6"><a href="" aria-hidden="true" tabindex="-1"></a># Stage the STANDARD_TEMPERATURE edit (y)</span>
+<span id="cb21-7"><a href="" aria-hidden="true" tabindex="-1"></a>git commit -m "Clarify standard temperature as sea-level value"</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<!-- ============================================================================== -->
+</section></section>
+<section>
+<section id="git-bisect" class="title-slide slide level1 center">
+<h1>Git Bisect</h1>
+
+</section>
+<section id="bisect" class="slide level2 smaller">
+<h2>Bisect</h2>
+<p>You discover that the test suite is <strong>failing</strong> on the latest commit, but you know it was passing before. Manual search would take forever.</p>
+<p><code>git bisect</code> performs a <strong>binary search</strong> through your commit history to find the exact commit that introduced a bug.</p>
+</section>
+<section id="manual-bisect-process" class="slide level2 smaller">
+<h2>Manual bisect process</h2>
+<p>For complicated processes we can run git bisect manually, only advancing to the next commit when we are ready.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb22-1"><a href="" aria-hidden="true" tabindex="-1"></a>git bisect start</span>
+<span id="cb22-2"><a href="" aria-hidden="true" tabindex="-1"></a>git bisect good &lt;known-good-commit&gt;</span>
+<span id="cb22-3"><a href="" aria-hidden="true" tabindex="-1"></a>git bisect bad HEAD          # current commit is broken</span>
+<span id="cb22-4"><a href="" aria-hidden="true" tabindex="-1"></a># git checks out a midpoint commit</span>
+<span id="cb22-5"><a href="" aria-hidden="true" tabindex="-1"></a># You test it and mark:</span>
+<span id="cb22-6"><a href="" aria-hidden="true" tabindex="-1"></a>git bisect good              # if it passes</span>
+<span id="cb22-7"><a href="" aria-hidden="true" tabindex="-1"></a>git bisect bad               # if it fails</span>
+<span id="cb22-8"><a href="" aria-hidden="true" tabindex="-1"></a># Repeat until the offending commit is found</span>
+<span id="cb22-9"><a href="" aria-hidden="true" tabindex="-1"></a>git bisect reset</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="automated-bisect-process" class="slide level2 smaller">
+<h2>Automated bisect process</h2>
+<p>For more straightforward processes we can run automated bisect.</p>
+<p>This takes a command and uses the exit code to decide if the commit is good (<code>0</code>) or bad (non-<code>0</code>). The full search can then be run without further user-input.</p>
+<p>This is well suited to simple commands such as running a test-suite or searching for the presence of a specific file/piece of code.</p>
+<p>For example, with <code>pytest</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb23-1"><a href="" aria-hidden="true" tabindex="-1"></a>git bisect start HEAD &lt;known-good-commit&gt;</span>
+<span id="cb23-2"><a href="" aria-hidden="true" tabindex="-1"></a>git bisect run python -m pytest</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="exercise-6" class="slide level2 smaller">
+<h2>Exercise 6</h2>
+<p>If we run the test suite for <code>thermolib</code> we see that someone made a commit at some point that results in test failures. It’s not obvious where, or why these two tests fail, so we’d like to track this down with <code>git bisect</code>.</p>
+<p>Use <code>git bisect</code> to locate the exact commit where the tests broke.</p>
+<ol type="1">
+<li>Identify a known-good commit (check the log)</li>
+<li>Start the bisect</li>
+<li>Let <code>git bisect run</code> find the culprit</li>
+</ol>
+<h3 class="smaller" id="exercise-6---solution">Exercise 6 - Solution</h3>
+<p>Verify the broken tests:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb24-1"><a href="" aria-hidden="true" tabindex="-1"></a>pytest ./</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Identify the offending commit using bisect:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb25-1"><a href="" aria-hidden="true" tabindex="-1"></a>git log --oneline          # identify good commit (e.g. 275ef1b)</span>
+<span id="cb25-2"><a href="" aria-hidden="true" tabindex="-1"></a>git bisect start HEAD 275ef1b</span>
+<span id="cb25-3"><a href="" aria-hidden="true" tabindex="-1"></a>git bisect run python -m pytest</span>
+<span id="cb25-4"><a href="" aria-hidden="true" tabindex="-1"></a>git bisect reset</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>git bisect</code> will narrow down to the single commit where tests first fail.</p>
+<!-- ============================================================================== -->
+</section></section>
+<section>
+<section id="closing" class="title-slide slide level1 center">
+<h1>Closing</h1>
+
+</section>
+<section id="summary" class="slide level2 smaller">
+<h2>Summary</h2>
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 38%">
+<col style="width: 41%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Topic</th>
+<th style="text-align: center;">Key Command</th>
+<th style="text-align: left;">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>Amending</strong></td>
+<td style="text-align: center;"><code>git commit --amend</code></td>
+<td style="text-align: left;">Add changes to the previous commit</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Stash</strong></td>
+<td style="text-align: center;"><code>git stash push / pop</code></td>
+<td style="text-align: left;">Shelve WIP temporarily</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Rebase</strong></td>
+<td style="text-align: center;"><code>git rebase</code></td>
+<td style="text-align: left;">Replay / squash commits</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Conflict resolution</strong></td>
+<td style="text-align: center;">Manual edit + <code>git add</code></td>
+<td style="text-align: left;">Fix overlapping changes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Patched additions</strong></td>
+<td style="text-align: center;"><code>git add -p</code></td>
+<td style="text-align: left;">Add only parts (hunks) of a changed file</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Bisect</strong></td>
+<td style="text-align: center;"><code>git bisect run</code></td>
+<td style="text-align: left;">Binary search for bugs</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="beyond-today" class="slide level2 smaller">
+<h2>Beyond today</h2>
+<ul>
+<li><strong><code>git commit --fixup</code></strong> — mark a commit to be combined with an older one in history using rebase with auto-squash</li>
+<li><strong><code>git cherry-pick</code></strong> — apply a specific commit to the current branch</li>
+<li><strong><code>git reflog</code></strong> — recovery of “lost” commits</li>
+<li><strong>Pre-commit hooks</strong> — automate linting and testing before committing</li>
+<li><strong>Merge strategies</strong> — merge commit, rebase, squash</li>
+</ul>
+<!-- ============================================================================== -->
+</section>
+<section id="where-can-i-learn-more" class="slide level2 smaller">
+<h2>Where can I learn more?</h2>
+<ul>
+<li><p>References and links in these slides</p></li>
+<li><p><a href="https://git-scm.com/book/en/v2">Pro Git book</a></p></li>
+<li><p>If something has gone really wrong: <a href="https://ohshitgit.com/">ohshitgit.com</a></p></li>
+<li><p>GitButler’s 2024 FOSDEM talk “so you think you know git?”: <iframe width="50%" src="https://www.youtube.com/embed/aolI_Rz0ZqY?si=cTgzuRQRB65STBGD" title="YouTube player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe></p></li>
+</ul>
+</section>
+<section id="thanks" class="slide level2 smaller">
 <h2>Thanks</h2>
 <div class="columns">
 <div class="column" style="width:20%;">
@@ -266,11 +1333,14 @@ Mikolaj Kowalski <a href="https://orcid.org/0000-0003-3940-7767" class="quarto-t
 </section>
 <section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
-<div id="refs" role="list">
-
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-Mukerjee_2024_unpacking" class="csl-entry" role="listitem">
+Mukerjee, A. 2024. <em>Unpacking Git Packfiles</em>. <a href="https://codewords.recurse.com/issues/three/unpacking-git-packfiles" class="uri">Https://codewords.recurse.com/issues/three/unpacking-git-packfiles</a>.
+</div>
 </div>
 
-</section>
+</section></section>
+
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="https://iccs.cam.ac.uk/files/iccs_ucam_combined_reverse_colour.png" class="slide-logo"></p>
@@ -434,7 +1504,7 @@ Mikolaj Kowalski <a href="https://orcid.org/0000-0003-3940-7767" class="quarto-t
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'none',
+        transition: 'slide',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
