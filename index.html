@@ -590,7 +590,19 @@ see cherry-picking and merge conflicts…</li>
 
 <!----------------------------------------------------------------------------------->
 <aside><div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
 <p>Note: We can always review our branches using <code>git branch -v</code>.</p>
+</div>
+</div>
+</div>
 </div></aside></section>
 <section id="branches-2" class="slide level2 smaller">
 <h2>Branches</h2>
@@ -727,11 +739,25 @@ P = P_0 \cdot \exp(-gz / (RT))
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode txt code-with-copy" data-id="quarto-animate-code"><code class="sourceCode default hljs"><span id="cb7-1" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a># Make your changes, stage them, then:</span>
 <span id="cb7-2" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a>git commit --amend</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-
-<aside><div>
-<p>Note: <code>--amend</code> replaces the old <strong>previous</strong> commit (complete with new hash), effectively <strong>rewriting history</strong> for the branch.<br>
+<p><br>
+</p>
+<div class="fragment">
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Warning</strong></p>
+</div>
+<div class="callout-content">
+<p><code>--amend</code> replaces the old <strong>previous</strong> commit (complete with new hash), effectively <strong>rewriting history</strong> for the branch.<br>
 We should only use it on our commits in our branch, not on code by others or already on <code>main</code>.</p>
-</div></aside></section>
+</div>
+</div>
+</div>
+</div>
+</section>
 <section id="amending-commits-2" class="slide level2 smaller" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Amending Commits</h2>
 <p>Enter <code>git commit --amend</code>:</p>
@@ -765,12 +791,34 @@ We should only use it on our commits in our branch, not on code by others or alr
 </div>
 <p><br>
 </p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
 <p>Tip: use <code>git log</code> or <code>git show</code> to review the last commit.</p>
-
-<aside><div>
-<p>Note: <code>--amend</code> replaces the old <strong>previous</strong> commit (complete with new hash), effectively <strong>rewriting history</strong> for the branch.<br>
+</div>
+</div>
+</div>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Warning</strong></p>
+</div>
+<div class="callout-content">
+<p><code>--amend</code> replaces the old <strong>previous</strong> commit (complete with new hash), effectively <strong>rewriting history</strong> for the branch.<br>
 We should only use it on our commits in our branch, not on code by others or already on <code>main</code>.</p>
-</div></aside></section>
+</div>
+</div>
+</div>
+</section>
 <section id="when-is-it-useful" class="slide level2 smaller">
 <h2>When is it useful?</h2>
 <ul>
@@ -799,11 +847,21 @@ We should only use it on our commits in our branch, not on code by others or alr
 <p><br>
 </p>
 <p>Extension: Also add input validation for the height, temperature, and surface pressure.</p>
-
-<aside><div>
-<p>Tip: Since you’re only modifying a tracked file you can stage all changes with:</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Since we’re only modifying a tracked file we can stage all changes with:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb9-1"><a href="" aria-hidden="true" tabindex="-1"></a>git add -u</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div></aside></section>
+</div>
+</div>
+</div>
+</section>
 <section id="exercise-2-solution-python" class="slide level2 smaller">
 <h2>Exercise 2 — Solution (Python)</h2>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
@@ -866,12 +924,22 @@ We should only use it on our commits in our branch, not on code by others or alr
 \Theta = T \cdot (P_0 / P)^{(R / c_p)}
 \]</span></p>
 <p>where <span class="math inline">\(c_p\)</span> is the specific heat capacity of dry air at constant pressure.</p>
-<p><br>
-</p>
 <p>Best practice says that for a new feature we should do this in new branch from <code>main</code>.</p>
 <p><br>
 </p>
-<p>Note: Do <strong>NOT</strong> commit this work yet - we are about to be interrupted.</p>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Important</strong></p>
+</div>
+<div class="callout-content">
+<p>Do <strong>NOT</strong> commit this work yet - we are about to be interrupted.</p>
+</div>
+</div>
+</div>
 
 <aside><div>
 <p><span class="math inline">\(c_p\)</span> is defined in <code>constants.py</code> as <code>SPECIFIC_HEAT_CAPACITY_DRY_AIR</code>.</p>
@@ -1234,7 +1302,19 @@ git merge pot-temp-eqn</code></pre>
 <span id="cb26-7"><a href="" aria-hidden="true" tabindex="-1"></a>git commit -m "Add latent heat of vaporization constant"</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><br>
 </p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
 <p>Note: the <code>-p</code> is not strictly required the second time.</p>
+</div>
+</div>
+</div>
 <!-- ============================================================================== -->
 </section></section>
 <section>
@@ -1291,7 +1371,20 @@ git merge pot-temp-eqn</code></pre>
 <p><code>git bisect</code> will narrow down to the single commit where tests first fail.</p>
 <p><br>
 </p>
-<p>Note: we could use <code>pytest test/unit/test_moisture.py</code> to only run the failing tests. <!-- ============================================================================== --></p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>We could use <code>pytest test/unit/test_moisture.py</code> to only run the failing tests.</p>
+</div>
+</div>
+</div>
+<!-- ============================================================================== -->
 </section></section>
 <section>
 <section id="closing" class="title-slide slide level1 center">

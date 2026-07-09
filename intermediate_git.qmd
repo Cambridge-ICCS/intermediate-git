@@ -332,7 +332,10 @@ Conduct development in branches and merged into main when completed:
 ::::
 
 ::: aside
+
+:::{.callout-tip}
 Note: We can always review our branches using `git branch -v`.
+:::
 :::
 
 <!----------------------------------------------------------------------------------->
@@ -480,11 +483,15 @@ git commit --amend
 
 :::
 
-::: aside
-Note: `--amend` replaces the old **previous** commit (complete with new hash), effectively **rewriting
+\
+
+::: {.fragment}
+:::{.callout-warning}
+`--amend` replaces the old **previous** commit (complete with new hash), effectively **rewriting
 history** for the branch.\
 We should only use it on our commits in our branch, not on code by others or already on
 `main`.
+:::
 :::
 
 ## Amending Commits {.smaller auto-animate=true}
@@ -508,10 +515,12 @@ git commit --amend
 
 \
 
+:::{.callout-tip}
 Tip: use `git log` or `git show` to review the last commit.
+:::
 
-::: aside
-Note: `--amend` replaces the old **previous** commit (complete with new hash), effectively **rewriting
+:::{.callout-warning}
+`--amend` replaces the old **previous** commit (complete with new hash), effectively **rewriting
 history** for the branch.\
 We should only use it on our commits in our branch, not on code by others or already on
 `main`.
@@ -547,8 +556,8 @@ Hint: You can find example code on the next slide.
 Extension: Also add input validation for the height, temperature,
 and surface pressure.
 
-::: aside
-Tip: Since you're only modifying a tracked file you can stage all changes with:
+:::{.callout-tip}
+Since we're only modifying a tracked file we can stage all changes with:
 ```txt
 git add -u
 ```
@@ -626,13 +635,13 @@ $$
 
 where $c_p$ is the specific heat capacity of dry air at constant pressure.
 
-\
-
 Best practice says that for a new feature we should do this in new branch from `main`.
 
 \
 
-Note: Do **NOT** commit this work yet - we are about to be interrupted.
+:::{.callout-important}
+Do **NOT** commit this work yet - we are about to be interrupted.
+:::
 
 ::: aside
 $c_p$ is defined in `constants.py` as `SPECIFIC_HEAT_CAPACITY_DRY_AIR`.
@@ -987,7 +996,9 @@ git commit -m "Add latent heat of vaporization constant"
 
 \
 
+:::{.callout-note}
 Note: the `-p` is not strictly required the second time.
+:::
 
 <!-- ============================================================================== -->
 
@@ -1066,7 +1077,10 @@ git bisect reset
 
 \
 
-Note: we could use `pytest test/unit/test_moisture.py` to only run the failing tests.
+:::{.callout-tip}
+We could use `pytest test/unit/test_moisture.py` to only run the failing tests.
+:::
+
 <!-- ============================================================================== -->
 
 # Closing
