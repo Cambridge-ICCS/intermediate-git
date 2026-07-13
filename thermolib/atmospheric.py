@@ -57,5 +57,7 @@ def calculate_air_density(pressure: float, temperature: float) -> float:
 
 # --------- Add functions during the git workshop here ---------
 
-
+def hydrostatic_pressure(pressure: float, temperature: float, height: float) -> float:
+    #Calculate hydrostatic pressure
+    return pressure * np.exp((-GRAVITATIONAL_ACCELERATION*height)/(temperature*SPECIFIC_GAS_CONSTANT_DRY_AIR))
 # --------------------------------------------------------------
